@@ -6,6 +6,7 @@ import { GestorTareasComponent } from './proyectos/gestor-tareas/gestor-tareas.c
 import { GlucontrolComponent } from './proyectos/glucontrol/glucontrol.component';
 import { GestorCitasComponent } from './proyectos/gestor-citas/gestor-citas.component';
 import { GestorInventarioComponent } from './proyectos/gestor-inventario/gestor-inventario.component';
+import { IntroASPComponent } from './proyectos/intro-asp/intro-asp.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'glucontrol', component: GlucontrolComponent },
   { path: 'gestorCitas', component: GestorCitasComponent },
   { path: 'gestorinventario', component: GestorInventarioComponent },
+  { path: 'introASP', component: IntroASPComponent },
 ];
 
 @NgModule({

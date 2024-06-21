@@ -7,7 +7,20 @@ import { IntroASPComponent } from './intro-asp/intro-asp.component';
 import { GestorInventarioComponent } from './gestor-inventario/gestor-inventario.component';
 
 @NgModule({
-  declarations: [GestorTareasComponent, GlucontrolComponent, GestorCitasComponent, IntroASPComponent, GestorInventarioComponent],
+  declarations: [
+    GestorTareasComponent,
+    GlucontrolComponent,
+    GestorCitasComponent,
+    IntroASPComponent,
+    GestorInventarioComponent,
+  ],
   imports: [CommonModule],
+  exports: [
+    GestorTareasComponent,
+    GlucontrolComponent,
+    GestorCitasComponent,
+    IntroASPComponent,
+    GestorInventarioComponent,
+  ],
 })
 export class ProyectosModule {}
