@@ -5,6 +5,7 @@ import { AcercaDeMiComponent } from './acerca-de-mi/acerca-de-mi.component';
 import { GestorTareasComponent } from './proyectos/gestor-tareas/gestor-tareas.component';
 import { GlucontrolComponent } from './proyectos/glucontrol/glucontrol.component';
 import { GestorCitasComponent } from './proyectos/gestor-citas/gestor-citas.component';
+import { GestorInventarioComponent } from './proyectos/gestor-inventario/gestor-inventario.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'proyectos', component: GestorTareasComponent },
   { path: 'glucontrol', component: GlucontrolComponent },
   { path: 'gestorCitas', component: GestorCitasComponent },
+  { path: 'gestorinventario', component: GestorInventarioComponent },
 ];
 
 @NgModule({
