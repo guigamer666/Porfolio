@@ -36,7 +36,7 @@ const folders = [
       'HistorialPedidos.PNG',
       'HistorialProductos.PNG',
       'Carrito.PNG',
-      'donar.PNG',
+      'suscriptores.PNG',
     ],
   },
   {

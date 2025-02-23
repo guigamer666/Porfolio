@@ -1,54 +1,111 @@
-<div class="container">
-  <h1 class="display-4">Hola, me llamo Guillermo Fuentes Buenosvinos, soy Técnico informático y vivo en Cañete de las
-    Torres</h1>
-  <p class="lead">Bienvenidos a mi porfolio, aquí pondré los proyectos que vaya haciendo de manera que todos lo puedan
-    ver cómo los he hecho y tendrán a su disposición el código fuente. Aquí solo tendré aquellos proyectos que finalice,
-    los proyectos en progreso los colgaré en LinkedIn.</p>
-  <h2 class="display-5">Algunos de mis trabajos</h2>
-  <div style="height: 500px; overflow-y: auto;"> <!-- Contenedor con desplazamiento vertical -->
-    <!-- Aquí van tus proyectos -->
-    <!-- Proyecto 1 -->
-    <div class="mb-4">
-      <h5>Gestor de tareas</h5>
-      <p>Este es mi primer proyecto que he realizado durante el curso de programación el cual me ha aportado el cómo
-        realizar una página web de manera correcta</p>
-      <a href="https://tareas-66631.firebaseapp.com/home" class="btn btn-primary" target="_blank">Ver proyecto</a>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guillermo Fuentes - Porfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Estilos personalizados */
+    .hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/1600x900/?technology,code') center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .card {
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .navbar {
+      background: rgba(0, 0, 0, 0.7) !important;
+    }
+  </style>
+</head>
+<body>
+
+
+
+  <!-- Sección Hero -->
+  <header class="hero">
+    <h1 class="display-4 fw-bold">Hola, soy Guillermo Fuentes</h1>
+    <p class="lead">Técnico informático | Desarrollador de software</p>
+  </header>
+
+  <!-- Sección Proyectos -->
+  <section id="proyectos" class="container py-5">
+    <h2 class="text-center mb-4">Mis Proyectos</h2>
+    <div class="row">
+      <!-- Proyecto 1 -->
+      <div class="col-md-4">
+        <div class="card shadow">
+          <div class="card-body">
+            <h5 class="card-title">Gestor de tareas</h5>
+            <p class="card-text">Aplicación web para organizar tareas de manera eficiente.</p>
+            <a href="https://tareas-66631.firebaseapp.com/home" class="btn btn-primary" target="_blank">Ver proyecto</a>
+          </div>
+        </div>
+      </div>
+      <!-- Proyecto 2 -->
+      <div class="col-md-4">
+        <div class="card shadow">
+          <div class="card-body">
+            <h5 class="card-title">Gluco Control</h5>
+            <p class="card-text">Proyecto colaborativo para el control de niveles de glucosa.</p>
+            <a href="https://github.com/blackl1ght98/Glucontrol_App" class="btn btn-primary" target="_blank">Ver
+              proyecto</a>
+          </div>
+        </div>
+      </div>
+      <!-- Proyecto 3 -->
+      <div class="col-md-4">
+        <div class="card shadow">
+          <div class="card-body">
+            <h5 class="card-title">Introducción a MVC</h5>
+            <p class="card-text">Pequeño proyecto para aprender sobre el modelo MVC.</p>
+            <a href="https://github.com/blackl1ght98/CRUD-Proyecto-MVC" class="btn btn-primary" target="_blank">Ver
+              proyecto</a>
+          </div>
+        </div>
+      </div>
+      <!-- Proyecto 4 -->
+      <div class="col-md-4 mt-4">
+        <div class="card shadow">
+          <div class="card-body">
+            <h5 class="card-title">Gestor Cita</h5>
+            <p class="card-text">Agenda en línea con separación de backend y frontend.</p>
+            <a href="https://github.com/blackl1ght98/GestorCitas" class="btn btn-primary" target="_blank">Ver
+              proyecto</a>
+          </div>
+        </div>
+      </div>
+      <!-- Proyecto 5 -->
+      <div class="col-md-4 mt-4">
+        <div class="card shadow">
+          <div class="card-body">
+            <h5 class="card-title">Gestor Inventario MVC</h5>
+            <p class="card-text">Sistema avanzado de gestión de inventario.</p>
+            <a href="https://github.com/blackl1ght98/GestorInventario" class="btn btn-primary" target="_blank">Ver
+              proyecto</a>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- Proyecto 2 -->
-    <div class="mb-4">
-      <h5>Gluco Control</h5>
-      <p>Este es mi segundo proyecto de hecho es un proyecto colaborativo el cual me ha aportado bastante conocimiento.
-        Dejare el enlace del repositorio para quien quiera verlo. Si quieren ver mas informacion del proyecto vayan a la
-        seccion proyectos de esta pagina web</p>
-      <a href="https://github.com/blackl1ght98/Glucontrol_App" class="btn btn-primary" target="_blank">Ver proyecto</a>
-    </div>
-    <!-- Proyecto 3 -->
-    <div class="mb-4">
-      <h5>Introducción a MVC</h5>
-      <p>Este es un proyecto realizado por cuenta propia y es un proyecto que me ha servido para comprender como
-        funciona MVC</p>
-      <a href="https://github.com/blackl1ght98/CRUD-Proyecto-MVC" class="btn btn-primary" target="_blank">Ver
-        proyecto</a>
-    </div>
-    <!-- Proyecto 4 -->
-    <div class="mb-4">
-      <h5>Gestor cita</h5>
-      <p>Este es un proyecto realizado por cuenta propia y es un proyecto que me ha en el cual puedes anotar tus citas
-        como si de una agenda se tratase. Este proyecto a pesar de que esta abs echo en mvc pero esta montado con el
-        front por separado esto me ayudo a comprender que un proyecto mvc puedes hacer que se comporte como si fuese un
-        proyecto tipo api</p>
-      <a href="https://github.com/blackl1ght98/GestorCitas" class="btn btn-primary" target="_blank">Ver proyecto</a>
-    </div>
-    <!-- Proyecto 5 -->
-    <div class="mb-4">
-      <h5>Gestor Inventario MVC</h5>
-      <p>Este es uno de los proyectos que cuentan con mas funcionalidad que mis proyectos anteriores a pesar de tener
-        funcionalidades parecidas a otros pero tengo ese sentimiento de que tiene mas funcionalidad que otros que he
-        realizado.</p>
-      <a href="https://github.com/blackl1ght98/GestorInventario" class="btn btn-primary" target="_blank">Ver
-        proyecto</a>
-    </div>
-  </div>
-</div>
-<h2 class="display-5">Contacta conmigo por este <a href="mailto:fuentesbuenosvinosguillermo@gmail.com"
-    class="text-primary">correo electrónico</a></h2>
+  </section>
+
+  <!-- Sección Contacto -->
+  <section id="contacto" class="bg-dark text-white text-center py-5">
+    <h2>Contacto</h2>
+    <p>Envíame un correo a <a href="mailto:fuentesbuenosvinosguillermo@gmail.com" class="text-primary">Correo
+        electronico</a></p>
+  </section>
+
+  <!-- Scripts de Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
